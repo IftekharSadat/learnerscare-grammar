@@ -1,0 +1,8 @@
+{
+  "name": "learnerscare-llm-proxy",
+  "private": true,
+  "type": "module",
+  "description": "Optional server-side proxy for the Talk level's LLMBrain. The API key never reaches the browser.",
+  "scripts": { "start": "node proxy.mjs" },
+  "dependencies": { "@anthropic-ai/sdk": "^1.0.0" }
+}

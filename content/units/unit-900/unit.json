@@ -1,0 +1,1995 @@
+{
+ "schemaVersion": 1,
+ "id": "unit-900",
+ "number": 900,
+ "title": "Present continuous — sample unit",
+ "subtitle": "I am doing",
+ "source": {
+  "book": "Original LearnersCare sample content",
+  "author": "LearnersCare",
+  "edition": "-",
+  "publisher": "LearnersCare",
+  "pages": [],
+  "deckCredit": "Original sample content written for the LearnersCare engine. Not taken from any textbook.",
+  "seeAlso": []
+ },
+ "journey": [
+  {
+   "id": "warmup",
+   "kind": "explain",
+   "title": "Warm-up",
+   "subtitle": "What you will learn",
+   "icon": "spark",
+   "steps": [
+    "sample-s01"
+   ],
+   "teaser": "Form"
+  },
+  {
+   "id": "sec-A",
+   "kind": "explain",
+   "sectionKey": "A",
+   "title": "Form",
+   "subtitle": "am / is / are + verb-ing",
+   "icon": "letter",
+   "steps": [
+    "sample-s02",
+    "sample-s03",
+    "sample-s04"
+   ],
+   "teaser": "Happening now"
+  },
+  {
+   "id": "sec-B",
+   "kind": "explain",
+   "sectionKey": "B",
+   "title": "Happening now",
+   "subtitle": "in the middle of an action",
+   "icon": "letter",
+   "steps": [
+    "sample-s05"
+   ],
+   "teaser": "These days"
+  },
+  {
+   "id": "sec-C",
+   "kind": "explain",
+   "sectionKey": "C",
+   "title": "These days",
+   "subtitle": "today, this week, this month",
+   "icon": "letter",
+   "steps": [
+    "sample-s06"
+   ],
+   "teaser": "Changing"
+  },
+  {
+   "id": "sec-D",
+   "kind": "explain",
+   "sectionKey": "D",
+   "title": "Changing",
+   "subtitle": "things that are becoming different",
+   "icon": "letter",
+   "steps": [
+    "sample-s07"
+   ],
+   "teaser": "Build the form"
+  },
+  {
+   "id": "ex-9.1",
+   "kind": "exercise",
+   "exerciseId": "9.1",
+   "title": "Build the form",
+   "subtitle": "Choose be and the -ing form",
+   "icon": "pencil",
+   "teaser": "Match the sentences"
+  },
+  {
+   "id": "ex-9.2",
+   "kind": "exercise",
+   "exerciseId": "9.2",
+   "title": "Match the sentences",
+   "subtitle": "Link each sentence with the one that follows",
+   "icon": "matching",
+   "teaser": "Build questions"
+  },
+  {
+   "id": "ex-9.3",
+   "kind": "exercise",
+   "exerciseId": "9.3",
+   "title": "Build questions",
+   "subtitle": "Put be before the subject",
+   "icon": "buildQuestion",
+   "teaser": "Read the clue"
+  },
+  {
+   "id": "ex-9.4",
+   "kind": "exercise",
+   "exerciseId": "9.4",
+   "title": "Read the clue",
+   "subtitle": "Decide, then build the form",
+   "icon": "positiveNegative",
+   "teaser": "Mistake Hunt"
+  },
+  {
+   "id": "mistakes",
+   "kind": "mistakeHunt",
+   "title": "Mistake Hunt",
+   "subtitle": "Tap and fix three typical errors",
+   "icon": "search",
+   "teaser": "Unit complete"
+  },
+  {
+   "id": "complete",
+   "kind": "complete",
+   "title": "Unit complete",
+   "subtitle": "Your certificate",
+   "icon": "trophy"
+  }
+ ],
+ "sections": [
+  {
+   "key": "intro",
+   "title": "Warm-up",
+   "kind": "intro",
+   "book": [],
+   "steps": [
+    {
+     "id": "sample-s01",
+     "deck": "explain",
+     "slide": 1,
+     "type": "overview",
+     "eyebrow": "WHAT YOU WILL LEARN",
+     "title": "Four parts, one tense",
+     "subtitle": "Form first, then three ways to use it.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 101,
+       "name": "Part A",
+       "lines": [
+        {
+         "name": "line",
+         "text": "A"
+        },
+        {
+         "name": "line",
+         "text": "Form"
+        },
+        {
+         "name": "line",
+         "text": "am / is / are + verb-ing"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 102,
+       "name": "Part B",
+       "lines": [
+        {
+         "name": "line",
+         "text": "B"
+        },
+        {
+         "name": "line",
+         "text": "Happening now"
+        },
+        {
+         "name": "line",
+         "text": "in the middle of an action"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 103,
+       "name": "Part C",
+       "lines": [
+        {
+         "name": "line",
+         "text": "C"
+        },
+        {
+         "name": "line",
+         "text": "These days"
+        },
+        {
+         "name": "line",
+         "text": "today, this week, this month"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 104,
+       "name": "Part D",
+       "lines": [
+        {
+         "name": "line",
+         "text": "D"
+        },
+        {
+         "name": "line",
+         "text": "Changing"
+        },
+        {
+         "name": "line",
+         "text": "things that are becoming different"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    }
+   ]
+  },
+  {
+   "key": "A",
+   "title": "Form",
+   "tagline": "am / is / are + verb-ing",
+   "kind": "explanation",
+   "book": [],
+   "steps": [
+    {
+     "id": "sample-s02",
+     "deck": "explain",
+     "slide": 2,
+     "type": "example",
+     "eyebrow": "SECTION A · A SITUATION",
+     "title": "In the kitchen",
+     "subtitle": "Mina started cooking a few minutes ago.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 105,
+       "name": "Example",
+       "lines": [
+        {
+         "name": "line",
+         "text": "Mina is in the kitchen."
+        },
+        {
+         "name": "line",
+         "text": "She’s making soup.",
+         "runs": [
+          {
+           "t": "She",
+           "role": "subject"
+          },
+          {
+           "t": "’s",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "making",
+           "role": "verb"
+          },
+          {
+           "t": " soup."
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 106,
+       "name": "Note",
+       "lines": [
+        {
+         "name": "line",
+         "text": "She started, and she has not finished: the action is in progress now."
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    },
+    {
+     "id": "sample-s03",
+     "deck": "explain",
+     "slide": 3,
+     "type": "form",
+     "eyebrow": "SECTION A · FORM",
+     "title": "Three parts",
+     "subtitle": "Subject, the right form of be, and the verb with -ing.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 107,
+       "name": "Block 1",
+       "lines": [
+        {
+         "name": "line",
+         "text": "SUBJECT"
+        },
+        {
+         "name": "line",
+         "text": "I, he, they…"
+        },
+        {
+         "name": "line",
+         "text": "who or what"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 108,
+       "name": "Block 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "BE VERB"
+        },
+        {
+         "name": "line",
+         "text": "am · is · are"
+        },
+        {
+         "name": "line",
+         "text": "matches the subject"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 109,
+       "name": "Block 3",
+       "lines": [
+        {
+         "name": "line",
+         "text": "MAIN VERB"
+        },
+        {
+         "name": "line",
+         "text": "read + ing"
+        },
+        {
+         "name": "line",
+         "text": "the action"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 110,
+       "name": "Row 1",
+       "lines": [
+        {
+         "name": "line",
+         "text": "I"
+        },
+        {
+         "name": "line",
+         "text": "am"
+        },
+        {
+         "name": "line",
+         "text": "reading"
+        },
+        {
+         "name": "line",
+         "text": "= I’m reading"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 111,
+       "name": "Row 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "He / She / It"
+        },
+        {
+         "name": "line",
+         "text": "is"
+        },
+        {
+         "name": "line",
+         "text": "sleeping"
+        },
+        {
+         "name": "line",
+         "text": "= He’s sleeping"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 112,
+       "name": "Row 3",
+       "lines": [
+        {
+         "name": "line",
+         "text": "We / You / They"
+        },
+        {
+         "name": "line",
+         "text": "are"
+        },
+        {
+         "name": "line",
+         "text": "playing"
+        },
+        {
+         "name": "line",
+         "text": "= They’re playing"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 113,
+       "name": "Remember",
+       "lines": [
+        {
+         "name": "line",
+         "text": "REMEMBER"
+        },
+        {
+         "name": "line",
+         "text": "be changes with the subject."
+        },
+        {
+         "name": "line",
+         "text": "The main verb always takes -ing."
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    },
+    {
+     "id": "sample-s04",
+     "deck": "explain",
+     "slide": 4,
+     "type": "contractions",
+     "eyebrow": "SECTION A · SHORT FORMS",
+     "title": "How we say it",
+     "subtitle": "In conversation we usually use the short form.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 114,
+       "name": "Pair 1",
+       "lines": [
+        {
+         "name": "line",
+         "text": "I"
+        },
+        {
+         "name": "line",
+         "text": "am"
+        },
+        {
+         "name": "line",
+         "text": "I’m"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 115,
+       "name": "Pair 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "He"
+        },
+        {
+         "name": "line",
+         "text": "is"
+        },
+        {
+         "name": "line",
+         "text": "He’s"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 116,
+       "name": "Pair 3",
+       "lines": [
+        {
+         "name": "line",
+         "text": "She"
+        },
+        {
+         "name": "line",
+         "text": "is"
+        },
+        {
+         "name": "line",
+         "text": "She’s"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 117,
+       "name": "Pair 4",
+       "lines": [
+        {
+         "name": "line",
+         "text": "We"
+        },
+        {
+         "name": "line",
+         "text": "are"
+        },
+        {
+         "name": "line",
+         "text": "We’re"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 118,
+       "name": "Pair 5",
+       "lines": [
+        {
+         "name": "line",
+         "text": "They"
+        },
+        {
+         "name": "line",
+         "text": "are"
+        },
+        {
+         "name": "line",
+         "text": "They’re"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 119,
+       "name": "Callout",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“He is sleeping” and “He’s sleeping” mean the same."
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    }
+   ]
+  },
+  {
+   "key": "B",
+   "title": "Happening now",
+   "tagline": "in the middle of an action",
+   "kind": "explanation",
+   "book": [],
+   "steps": [
+    {
+     "id": "sample-s05",
+     "deck": "explain",
+     "slide": 5,
+     "type": "example",
+     "eyebrow": "SECTION B · IN PROGRESS",
+     "title": "In the middle of it",
+     "subtitle": "The action has started and is not finished.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 120,
+       "name": "Example 1",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“Please be quiet.”"
+        },
+        {
+         "name": "line",
+         "text": "“The baby is sleeping.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "The baby",
+           "role": "subject"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "is",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "sleeping",
+           "role": "verb"
+          },
+          {
+           "t": ".”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 121,
+       "name": "Example 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“Where is Omar?”"
+        },
+        {
+         "name": "line",
+         "text": "“He’s washing the car.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "He",
+           "role": "subject"
+          },
+          {
+           "t": "’s",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "washing",
+           "role": "verb"
+          },
+          {
+           "t": " the car.”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 122,
+       "name": "Example 3",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“I’m writing a long story these days.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "I",
+           "role": "subject"
+          },
+          {
+           "t": "’m",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "writing",
+           "role": "verb"
+          },
+          {
+           "t": " a long story these days.”"
+          }
+         ]
+        },
+        {
+         "name": "line",
+         "text": "Not at this exact second, but the story is not finished."
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    }
+   ]
+  },
+  {
+   "key": "C",
+   "title": "These days",
+   "tagline": "today, this week, this month",
+   "kind": "explanation",
+   "book": [],
+   "steps": [
+    {
+     "id": "sample-s06",
+     "deck": "explain",
+     "slide": 6,
+     "type": "periods",
+     "eyebrow": "SECTION C · PERIODS AROUND NOW",
+     "title": "A period around now",
+     "subtitle": "The action belongs to the present period.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 123,
+       "name": "Ring this month",
+       "lines": [
+        {
+         "name": "line",
+         "text": "this month"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null,
+       "box": [
+        0,
+        0,
+        0.5,
+        0.5
+       ]
+      },
+      {
+       "id": 124,
+       "name": "Ring this week",
+       "lines": [
+        {
+         "name": "line",
+         "text": "this week"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null,
+       "box": [
+        0,
+        0,
+        0.4,
+        0.4
+       ]
+      },
+      {
+       "id": 125,
+       "name": "Ring today",
+       "lines": [
+        {
+         "name": "line",
+         "text": "today"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null,
+       "box": [
+        0,
+        0,
+        0.3,
+        0.3
+       ]
+      },
+      {
+       "id": 126,
+       "name": "NOW marker",
+       "lines": [
+        {
+         "name": "line",
+         "text": "NOW"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 127,
+       "name": "Example",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“We’re eating at home this week.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "We",
+           "role": "subject"
+          },
+          {
+           "t": "’re",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "eating",
+           "role": "verb"
+          },
+          {
+           "t": " at home this week.”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 128,
+       "name": "Example 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“My brother isn’t working this month.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "My brother",
+           "role": "subject"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "isn’t",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "working",
+           "role": "verb"
+          },
+          {
+           "t": " this month.”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    }
+   ]
+  },
+  {
+   "key": "D",
+   "title": "Changing",
+   "tagline": "things that are becoming different",
+   "kind": "explanation",
+   "book": [],
+   "steps": [
+    {
+     "id": "sample-s07",
+     "deck": "explain",
+     "slide": 7,
+     "type": "changeVerbs",
+     "eyebrow": "SECTION D · CHANGES",
+     "title": "Verbs of change",
+     "subtitle": "Use the tense for a change that has started.",
+     "origin": "learnerscare",
+     "voiceOver": "",
+     "blocks": [
+      {
+       "id": 129,
+       "name": "Verbs 1",
+       "lines": [
+        {
+         "name": "line",
+         "text": "getting"
+        },
+        {
+         "name": "line",
+         "text": "becoming"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 130,
+       "name": "Verbs 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "improving"
+        },
+        {
+         "name": "line",
+         "text": "changing"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 131,
+       "name": "Verbs 3",
+       "lines": [
+        {
+         "name": "line",
+         "text": "rising"
+        },
+        {
+         "name": "line",
+         "text": "growing"
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 132,
+       "name": "Example",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“The days are getting shorter.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "The days",
+           "role": "subject"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "are",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "getting",
+           "role": "verb"
+          },
+          {
+           "t": " shorter.”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      },
+      {
+       "id": 133,
+       "name": "Example 2",
+       "lines": [
+        {
+         "name": "line",
+         "text": "“Your handwriting is improving.”",
+         "runs": [
+          {
+           "t": "“"
+          },
+          {
+           "t": "Your handwriting",
+           "role": "subject"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "is",
+           "role": "be"
+          },
+          {
+           "t": " "
+          },
+          {
+           "t": "improving",
+           "role": "verb"
+          },
+          {
+           "t": ".”"
+          }
+         ]
+        }
+       ],
+       "cueMs": null,
+       "exitMs": null
+      }
+     ],
+     "audio": null
+    }
+   ]
+  }
+ ],
+ "guidedPractice": null,
+ "practiceIntro": [],
+ "exercises": [
+  {
+   "id": "9.1",
+   "origin": "learnerscare",
+   "type": "gapFill",
+   "sectionRef": "A",
+   "title": "Complete the sentence",
+   "shortName": "Build the form",
+   "task": "Choose be and the -ing form",
+   "instructions": "Use am / is / are + verb-ing.",
+   "intro": null,
+   "recap": null,
+   "items": [
+    {
+     "id": "9.1.1",
+     "number": 1,
+     "isExample": true,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "A",
+     "prompt": "The cat ______ (sleep) on the sofa.",
+     "cueWords": "sleep",
+     "verb": "sleep",
+     "acceptedAnswers": [
+      "is sleeping",
+      "’s sleeping"
+     ],
+     "officialAnswer": "is sleeping / ’s sleeping",
+     "answerSentences": [
+      "The cat is sleeping on the sofa.",
+      "The cat’s sleeping on the sofa."
+     ],
+     "why": "One cat → is. Sleep just adds -ing.",
+     "tiles": [
+      {
+       "t": "The cat",
+       "role": "subject"
+      },
+      {
+       "t": "is",
+       "role": "be"
+      },
+      {
+       "t": "sleeping",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": false
+    },
+    {
+     "id": "9.1.2",
+     "number": 2,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "A",
+     "prompt": "I ______ (read) a comic.",
+     "cueWords": "read",
+     "verb": "read",
+     "acceptedAnswers": [
+      "am reading",
+      "’m reading"
+     ],
+     "officialAnswer": "am reading / ’m reading",
+     "answerSentences": [
+      "I am reading a comic.",
+      "I’m reading a comic."
+     ],
+     "why": "I always goes with am.",
+     "tiles": [
+      {
+       "t": "I",
+       "role": "subject"
+      },
+      {
+       "t": "am",
+       "role": "be"
+      },
+      {
+       "t": "reading",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": false
+    },
+    {
+     "id": "9.1.3",
+     "number": 3,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "A",
+     "prompt": "They ______ (make) a kite.",
+     "cueWords": "make",
+     "verb": "make",
+     "acceptedAnswers": [
+      "are making",
+      "’re making"
+     ],
+     "officialAnswer": "are making / ’re making",
+     "answerSentences": [
+      "They are making a kite.",
+      "They’re making a kite."
+     ],
+     "why": "They → are. Make drops the final e.",
+     "tiles": [
+      {
+       "t": "They",
+       "role": "subject"
+      },
+      {
+       "t": "are",
+       "role": "be"
+      },
+      {
+       "t": "making",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": false,
+     "spellingNote": "make → making (drop the final e)"
+    },
+    {
+     "id": "9.1.4",
+     "number": 4,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "My sister ______ (run) in the park.",
+     "cueWords": "run",
+     "verb": "run",
+     "acceptedAnswers": [
+      "is running",
+      "’s running"
+     ],
+     "officialAnswer": "is running / ’s running",
+     "answerSentences": [
+      "My sister is running in the park.",
+      "My sister’s running in the park."
+     ],
+     "why": "One person → is. Run doubles the n.",
+     "tiles": [
+      {
+       "t": "My sister",
+       "role": "subject"
+      },
+      {
+       "t": "is",
+       "role": "be"
+      },
+      {
+       "t": "running",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": false,
+     "spellingNote": "run → running (double the last letter)"
+    },
+    {
+     "id": "9.1.5",
+     "number": 5,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "A",
+     "prompt": "We ______ (wait) for the bus.",
+     "cueWords": "wait",
+     "verb": "wait",
+     "acceptedAnswers": [
+      "are waiting",
+      "’re waiting"
+     ],
+     "officialAnswer": "are waiting / ’re waiting",
+     "answerSentences": [
+      "We are waiting for the bus.",
+      "We’re waiting for the bus."
+     ],
+     "why": "We → are. Wait just adds -ing.",
+     "tiles": [
+      {
+       "t": "We",
+       "role": "subject"
+      },
+      {
+       "t": "are",
+       "role": "be"
+      },
+      {
+       "t": "waiting",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": false
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "origin": "learnerscare",
+   "type": "matching",
+   "sectionRef": "B",
+   "title": "Which sentence follows?",
+   "shortName": "Match the sentences",
+   "task": "Link each sentence with the one that follows",
+   "instructions": "Each ending is used once.",
+   "intro": null,
+   "recap": null,
+   "options": [
+    {
+     "key": "a",
+     "text": "It’s beginning to snow."
+    },
+    {
+     "key": "b",
+     "text": "Our family is growing."
+    },
+    {
+     "key": "c",
+     "text": "I’m working late every day."
+    },
+    {
+     "key": "d",
+     "text": "I’m doing my homework."
+    },
+    {
+     "key": "e",
+     "text": "He’s cooking dinner."
+    }
+   ],
+   "items": [
+    {
+     "id": "9.2.1",
+     "number": 1,
+     "isExample": true,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "Turn the music down, please.",
+     "acceptedAnswers": [
+      "d"
+     ],
+     "officialAnswer": "1 → d",
+     "answerSentences": [
+      "I’m doing my homework."
+     ],
+     "why": "The second sentence gives the reason: an action in progress now."
+    },
+    {
+     "id": "9.2.2",
+     "number": 2,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "D",
+     "prompt": "Wear your boots.",
+     "acceptedAnswers": [
+      "a"
+     ],
+     "officialAnswer": "2 → a",
+     "answerSentences": [
+      "It’s beginning to snow."
+     ],
+     "why": "A change is beginning, so boots are a good idea."
+    },
+    {
+     "id": "9.2.3",
+     "number": 3,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "Dad can’t come to the phone.",
+     "acceptedAnswers": [
+      "e"
+     ],
+     "officialAnswer": "3 → e",
+     "answerSentences": [
+      "He’s cooking dinner."
+     ],
+     "why": "He is in the middle of cooking right now."
+    },
+    {
+     "id": "9.2.4",
+     "number": 4,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "D",
+     "prompt": "We need a bigger table.",
+     "acceptedAnswers": [
+      "b"
+     ],
+     "officialAnswer": "4 → b",
+     "answerSentences": [
+      "Our family is growing."
+     ],
+     "why": "Growing describes a change that is happening."
+    },
+    {
+     "id": "9.2.5",
+     "number": 5,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "C",
+     "prompt": "I can’t meet you this week.",
+     "acceptedAnswers": [
+      "c"
+     ],
+     "officialAnswer": "5 → c",
+     "answerSentences": [
+      "I’m working late every day."
+     ],
+     "why": "This week is a period around now."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "origin": "learnerscare",
+   "type": "buildQuestion",
+   "sectionRef": "B",
+   "title": "Ask the question",
+   "shortName": "Build questions",
+   "task": "Put be before the subject",
+   "instructions": "Use the cue words.",
+   "intro": null,
+   "recap": null,
+   "patterns": [
+    {
+     "label": "WITH A QUESTION WORD",
+     "slots": [
+      "Question word",
+      "am / is / are",
+      "subject",
+      "verb + -ing"
+     ]
+    },
+    {
+     "label": "YES / NO QUESTION",
+     "slots": [
+      "am / is / are",
+      "subject",
+      "verb + -ing"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "9.3.1",
+     "number": 1,
+     "isExample": true,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "You look busy.",
+     "cueWords": "(what / you / do?)",
+     "acceptedAnswers": [
+      "What are you doing?"
+     ],
+     "officialAnswer": "What are you doing?",
+     "answerSentences": [
+      "What are you doing?"
+     ],
+     "why": "",
+     "tiles": [],
+     "pattern": "wh"
+    },
+    {
+     "id": "9.3.2",
+     "number": 2,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "The children are very quiet.",
+     "cueWords": "(what / they / watch?)",
+     "acceptedAnswers": [
+      "What are they watching?"
+     ],
+     "officialAnswer": "What are they watching?",
+     "answerSentences": [
+      "What are they watching?"
+     ],
+     "why": "Question word, then are (for they), then the subject, then watch + ing.",
+     "tiles": [
+      {
+       "t": "What",
+       "role": "qword"
+      },
+      {
+       "t": "are",
+       "role": "be"
+      },
+      {
+       "t": "they",
+       "role": "subject"
+      },
+      {
+       "t": "watching",
+       "role": "verb"
+      }
+     ],
+     "pattern": "wh"
+    },
+    {
+     "id": "9.3.3",
+     "number": 3,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "C",
+     "prompt": "Sara has a new timetable.",
+     "cueWords": "(she / study / today?)",
+     "acceptedAnswers": [
+      "Is she studying today?"
+     ],
+     "officialAnswer": "Is she studying today?",
+     "answerSentences": [
+      "Is she studying today?"
+     ],
+     "why": "No question word: be comes first.",
+     "tiles": [
+      {
+       "t": "Is",
+       "role": "be"
+      },
+      {
+       "t": "she",
+       "role": "subject"
+      },
+      {
+       "t": "studying",
+       "role": "verb"
+      },
+      {
+       "t": "today",
+       "role": "rest"
+      }
+     ],
+     "pattern": "yesno"
+    },
+    {
+     "id": "9.3.4",
+     "number": 4,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "I can hear the car.",
+     "cueWords": "(why / he / leave?)",
+     "acceptedAnswers": [
+      "Why is he leaving?"
+     ],
+     "officialAnswer": "Why is he leaving?",
+     "answerSentences": [
+      "Why is he leaving?"
+     ],
+     "why": "He → is. Leave drops the final e.",
+     "tiles": [
+      {
+       "t": "Why",
+       "role": "qword"
+      },
+      {
+       "t": "is",
+       "role": "be"
+      },
+      {
+       "t": "he",
+       "role": "subject"
+      },
+      {
+       "t": "leaving",
+       "role": "verb"
+      }
+     ],
+     "pattern": "wh"
+    },
+    {
+     "id": "9.3.5",
+     "number": 5,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "D",
+     "prompt": "The shop has new prices.",
+     "cueWords": "(the prices / rise?)",
+     "acceptedAnswers": [
+      "Are the prices rising?"
+     ],
+     "officialAnswer": "Are the prices rising?",
+     "answerSentences": [
+      "Are the prices rising?"
+     ],
+     "why": "More than one price → are, and be comes first.",
+     "tiles": [
+      {
+       "t": "Are",
+       "role": "be"
+      },
+      {
+       "t": "the prices",
+       "role": "subject"
+      },
+      {
+       "t": "rising",
+       "role": "verb"
+      }
+     ],
+     "pattern": "yesno"
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "origin": "learnerscare",
+   "type": "positiveNegative",
+   "sectionRef": "B",
+   "title": "Positive or negative?",
+   "shortName": "Read the clue",
+   "task": "Decide, then build the form",
+   "instructions": "Find the clue first.",
+   "intro": null,
+   "recap": null,
+   "method": [
+    "Find the clue",
+    "Decide: positive or negative",
+    "Build the form"
+   ],
+   "items": [
+    {
+     "id": "9.4.1",
+     "number": 1,
+     "isExample": true,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "You can close the window. ______ (I / feel) cold.",
+     "cueWords": "I / feel",
+     "acceptedAnswers": [
+      "I’m feeling",
+      "I am feeling"
+     ],
+     "officialAnswer": "I’m feeling / I am feeling",
+     "answerSentences": [
+      "You can close the window. I’m feeling cold.",
+      "You can close the window. I am feeling cold."
+     ],
+     "polarity": "positive",
+     "clue": "You can close the window",
+     "clueSpans": [
+      [
+       0,
+       24
+      ]
+     ],
+     "why": "",
+     "structure": "subject + be + verb-ing",
+     "tiles": [
+      {
+       "t": "I",
+       "role": "subject"
+      },
+      {
+       "t": "’m",
+       "role": "be"
+      },
+      {
+       "t": "feeling",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": true
+    },
+    {
+     "id": "9.4.2",
+     "number": 2,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "You can have the remote. ______ (I / watch) this programme.",
+     "cueWords": "I / watch",
+     "acceptedAnswers": [
+      "I’m not watching",
+      "I am not watching"
+     ],
+     "officialAnswer": "I’m not watching / I am not watching",
+     "answerSentences": [
+      "You can have the remote. I’m not watching this programme.",
+      "You can have the remote. I am not watching this programme."
+     ],
+     "polarity": "negative",
+     "clue": "You can have the remote",
+     "clueSpans": [
+      [
+       0,
+       23
+      ]
+     ],
+     "why": "If someone else can have the remote, the speaker is not watching.",
+     "structure": "subject + be + not + verb-ing",
+     "tiles": [
+      {
+       "t": "I",
+       "role": "subject"
+      },
+      {
+       "t": "’m not",
+       "role": "be"
+      },
+      {
+       "t": "watching",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": true
+    },
+    {
+     "id": "9.4.3",
+     "number": 3,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "B",
+     "prompt": "Lena is in the garden. ______ (She / plant) flowers.",
+     "cueWords": "She / plant",
+     "acceptedAnswers": [
+      "She’s planting",
+      "She is planting"
+     ],
+     "officialAnswer": "She’s planting / She is planting",
+     "answerSentences": [
+      "Lena is in the garden. She’s planting flowers.",
+      "Lena is in the garden. She is planting flowers."
+     ],
+     "polarity": "positive",
+     "clue": "in the garden",
+     "clueSpans": [
+      [
+       8,
+       21
+      ]
+     ],
+     "why": "She is in the garden doing it now.",
+     "structure": "subject + be + verb-ing",
+     "tiles": [
+      {
+       "t": "She",
+       "role": "subject"
+      },
+      {
+       "t": "’s",
+       "role": "be"
+      },
+      {
+       "t": "planting",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": true
+    },
+    {
+     "id": "9.4.4",
+     "number": 4,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "C",
+     "prompt": "The office is closed this week. ______ (They / work).",
+     "cueWords": "They / work",
+     "acceptedAnswers": [
+      "They aren’t working",
+      "They’re not working",
+      "They are not working"
+     ],
+     "officialAnswer": "They aren’t working / They’re not working / They are not working",
+     "answerSentences": [
+      "The office is closed this week. They aren’t working.",
+      "The office is closed this week. They’re not working.",
+      "The office is closed this week. They are not working."
+     ],
+     "polarity": "negative",
+     "clue": "closed this week",
+     "clueSpans": [
+      [
+       14,
+       30
+      ]
+     ],
+     "why": "A closed office means nobody is working this week.",
+     "structure": "subject + be + not + verb-ing",
+     "tiles": [
+      {
+       "t": "They",
+       "role": "subject"
+      },
+      {
+       "t": "aren’t",
+       "role": "be"
+      },
+      {
+       "t": "working",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": true
+    },
+    {
+     "id": "9.4.5",
+     "number": 5,
+     "isExample": false,
+     "origin": "learnerscare",
+     "hints": {
+      "bn": ""
+     },
+     "audio": {
+      "question": null,
+      "answer": null,
+      "pauseMs": 0
+     },
+     "mapsToSection": "D",
+     "prompt": "Put on a coat. ______ (It / get) colder.",
+     "cueWords": "It / get",
+     "acceptedAnswers": [
+      "It’s getting",
+      "It is getting"
+     ],
+     "officialAnswer": "It’s getting / It is getting",
+     "answerSentences": [
+      "Put on a coat. It’s getting colder.",
+      "Put on a coat. It is getting colder."
+     ],
+     "polarity": "positive",
+     "clue": "Put on a coat",
+     "clueSpans": [
+      [
+       0,
+       13
+      ]
+     ],
+     "why": "You need a coat because a change is happening.",
+     "structure": "subject + be + verb-ing",
+     "tiles": [
+      {
+       "t": "It",
+       "role": "subject"
+      },
+      {
+       "t": "’s",
+       "role": "be"
+      },
+      {
+       "t": "getting",
+       "role": "verb"
+      }
+     ],
+     "subjectInBlank": true
+    }
+   ]
+  }
+ ],
+ "commonMistakes": [
+  {
+   "id": "M1",
+   "label": "MISSING BE",
+   "wrong": "The cat sleeping on the sofa.",
+   "right": "The cat is sleeping on the sofa.",
+   "origin": "learnerscare",
+   "audio": null
+  },
+  {
+   "id": "M2",
+   "label": "QUESTION ORDER",
+   "wrong": "What they are watching?",
+   "right": "What are they watching?",
+   "origin": "learnerscare",
+   "audio": null
+  },
+  {
+   "id": "M3",
+   "label": "NEGATIVE FORM",
+   "wrong": "I don’t watching this programme.",
+   "right": "I’m not watching this programme.",
+   "origin": "learnerscare",
+   "audio": null
+  }
+ ],
+ "mistakesStep": null,
+ "review": {
+  "step": null,
+  "rapid": null
+ },
+ "takeaways": {
+  "exercises": null
+ },
+ "completion": {
+  "id": "sample-done",
+  "deck": "exercises",
+  "slide": 99,
+  "type": "completion",
+  "eyebrow": "LEARNERSCARE",
+  "title": "Well done!",
+  "subtitle": "You have completed the sample unit.",
+  "origin": "learnerscare",
+  "voiceOver": "",
+  "blocks": [],
+  "audio": null
+ }
+}

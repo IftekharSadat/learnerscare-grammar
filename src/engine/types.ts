@@ -1,0 +1,23 @@
+import type { z } from 'zod';
+import type * as S from './schema';
+
+export type Unit = z.infer<typeof S.Unit>;
+export type Section = z.infer<typeof S.Section>;
+export type Step = z.infer<typeof S.Step>;
+export type Block = z.infer<typeof S.Block>;
+export type Line = z.infer<typeof S.Line>;
+export type Run = z.infer<typeof S.Run>;
+export type Clip = z.infer<typeof S.Clip>;
+export type Cue = z.infer<typeof S.Cue>;
+export type Caption = z.infer<typeof S.Caption>;
+export type Exercise = z.infer<typeof S.Exercise>;
+export type Item = z.infer<typeof S.Item>;
+export type Tile = z.infer<typeof S.Tile>;
+export type Mistake = z.infer<typeof S.Mistake>;
+export type RapidItem = z.infer<typeof S.RapidItem>;
+export type JourneyNode = z.infer<typeof S.JourneyNode>;
+export type Manifest = z.infer<typeof S.Manifest>;
+export type Media = z.infer<typeof S.Media>;
+export type BookLine = z.infer<typeof S.BookLine>;
+export type Origin = z.infer<typeof S.Origin>;
+export type Role = NonNullable<Run['role']>;

@@ -1,0 +1,528 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schemaVersion": {
+   "type": "number",
+   "const": 1
+  },
+  "unitId": {
+   "type": "string"
+  },
+  "title": {
+   "type": "string"
+  },
+  "language": {
+   "type": "string"
+  },
+  "partners": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "persona": {
+      "type": "string"
+     },
+     "look": {
+      "type": "string"
+     },
+     "voice": {
+      "type": "object",
+      "properties": {
+       "rate": {
+        "type": "number"
+       },
+       "pitch": {
+        "type": "number"
+       }
+      },
+      "required": [
+       "rate",
+       "pitch"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "persona",
+     "look",
+     "voice"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "pronunciationFocus": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "tip": {
+      "type": "string"
+     },
+     "pattern": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "label",
+     "tip",
+     "pattern"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "scope": {
+   "type": "object",
+   "properties": {
+    "structure": {
+     "type": "string"
+    },
+    "structureId": {
+     "type": "string"
+    },
+    "forbiddenWords": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "periodWords": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "changeVerbs": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "structure",
+    "structureId",
+    "forbiddenWords",
+    "periodWords",
+    "changeVerbs"
+   ],
+   "additionalProperties": false
+  },
+  "coverage": {
+   "type": "object",
+   "properties": {
+    "excluded": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "text": {
+        "type": "string"
+       },
+       "reason": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "text",
+       "reason"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "excluded"
+   ],
+   "additionalProperties": false
+  },
+  "nextUnitTeaser": {
+   "type": "string"
+  },
+  "scenes": {
+   "minItems": 1,
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "sectionRef": {
+      "type": "string"
+     },
+     "partnerId": {
+      "type": "string"
+     },
+     "situation": {
+      "type": "string"
+     },
+     "teaser": {
+      "type": "string"
+     },
+     "finale": {
+      "type": "boolean"
+     },
+     "missions": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "id": {
+         "type": "string"
+        },
+        "label": {
+         "type": "string"
+        },
+        "requires": {
+         "type": "string",
+         "enum": [
+          "statement",
+          "question",
+          "negative",
+          "any"
+         ]
+        }
+       },
+       "required": [
+        "id",
+        "label",
+        "requires"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "turns": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "id": {
+         "type": "string"
+        },
+        "type": {
+         "type": "string",
+         "enum": [
+          "readAloud",
+          "listenRepeat",
+          "describe",
+          "askQuestion",
+          "decide",
+          "respond",
+          "freeRolePlay"
+         ]
+        },
+        "sectionRef": {
+         "type": "string"
+        },
+        "origin": {
+         "type": "string",
+         "enum": [
+          "book",
+          "learnerscare",
+          "generated"
+         ]
+        },
+        "status": {
+         "type": "string",
+         "enum": [
+          "draft",
+          "approved"
+         ]
+        },
+        "mirrors": {
+         "type": "string"
+        },
+        "partner": {
+         "type": "object",
+         "properties": {
+          "text": {
+           "type": "string"
+          },
+          "audio": {
+           "anyOf": [
+            {
+             "type": "object",
+             "properties": {
+              "src": {
+               "type": "string"
+              },
+              "durationMs": {
+               "type": "number"
+              },
+              "hash": {
+               "type": "string"
+              }
+             },
+             "required": [
+              "src",
+              "durationMs"
+             ],
+             "additionalProperties": false
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "emotion": {
+           "type": "string",
+           "enum": [
+            "smile",
+            "surprised",
+            "thinking"
+           ]
+          }
+         },
+         "required": [
+          "text"
+         ],
+         "additionalProperties": false
+        },
+        "prompt": {
+         "type": "object",
+         "properties": {
+          "text": {
+           "type": "string"
+          },
+          "picture": {
+           "type": "string"
+          },
+          "pictureAlt": {
+           "type": "string"
+          },
+          "cueWords": {
+           "type": "string"
+          },
+          "context": {
+           "type": "string"
+          },
+          "clue": {
+           "type": "string"
+          },
+          "responseIdeas": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          }
+         },
+         "additionalProperties": false
+        },
+        "target": {
+         "type": "object",
+         "properties": {
+          "canonical": {
+           "type": "string",
+           "minLength": 1
+          },
+          "acceptedUtterances": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "pattern": {
+           "type": "object",
+           "properties": {
+            "kind": {
+             "type": "string",
+             "enum": [
+              "statement",
+              "question",
+              "negative",
+              "any"
+             ]
+            },
+            "open": {
+             "type": "boolean"
+            }
+           },
+           "required": [
+            "kind"
+           ],
+           "additionalProperties": false
+          },
+          "requiredTokens": {
+           "type": "array",
+           "items": {
+            "type": "array",
+            "items": {
+             "type": "string"
+            }
+           }
+          },
+          "forbiddenPatterns": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "allowOutOfScope": {
+           "type": "boolean"
+          }
+         },
+         "required": [
+          "canonical",
+          "acceptedUtterances"
+         ],
+         "additionalProperties": false
+        },
+        "pronunciationFocus": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "hints": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "feedback": {
+         "type": "object",
+         "properties": {
+          "onPass": {
+           "type": "string"
+          },
+          "recast": {
+           "type": "string"
+          },
+          "onNearMiss": {
+           "type": "string"
+          },
+          "onWrong": {
+           "type": "object",
+           "propertyNames": {
+            "type": "string"
+           },
+           "additionalProperties": {
+            "type": "string"
+           }
+          }
+         },
+         "required": [
+          "onPass"
+         ],
+         "additionalProperties": false
+        },
+        "wrongExamples": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "say": {
+            "type": "string"
+           },
+           "feedbackKey": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "say",
+           "feedbackKey"
+          ],
+          "additionalProperties": false
+         }
+        },
+        "points": {
+         "type": "object",
+         "properties": {
+          "base": {
+           "type": "number"
+          },
+          "bonusClear": {
+           "type": "number"
+          },
+          "bonusNoHint": {
+           "type": "number"
+          }
+         },
+         "required": [
+          "base",
+          "bonusClear",
+          "bonusNoHint"
+         ],
+         "additionalProperties": false
+        },
+        "next": {
+         "type": "object",
+         "properties": {
+          "pass": {
+           "type": "string"
+          },
+          "fail": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "pass",
+          "fail"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "id",
+        "type",
+        "sectionRef",
+        "origin",
+        "status",
+        "prompt",
+        "target",
+        "pronunciationFocus",
+        "hints",
+        "feedback",
+        "points",
+        "next"
+       ],
+       "additionalProperties": false
+      }
+     }
+    },
+    "required": [
+     "id",
+     "title",
+     "sectionRef",
+     "partnerId",
+     "situation",
+     "teaser",
+     "turns"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "schemaVersion",
+  "unitId",
+  "title",
+  "language",
+  "partners",
+  "pronunciationFocus",
+  "scope",
+  "coverage",
+  "scenes"
+ ],
+ "additionalProperties": false
+}

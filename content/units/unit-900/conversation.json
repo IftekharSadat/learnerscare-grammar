@@ -1,0 +1,592 @@
+{
+ "schemaVersion": 1,
+ "unitId": "unit-900",
+ "title": "Talk",
+ "language": "en-GB",
+ "partners": [
+  {
+   "id": "maya",
+   "name": "Maya",
+   "persona": "A cheerful friend who always calls at the right moment.",
+   "look": "teal",
+   "voice": {
+    "rate": 0.95,
+    "pitch": 1.15
+   }
+  },
+  {
+   "id": "leo",
+   "name": "Leo",
+   "persona": "Your easy-going flatmate. Loves cooking, hates noise.",
+   "look": "coral",
+   "voice": {
+    "rate": 0.95,
+    "pitch": 0.85
+   }
+  }
+ ],
+ "pronunciationFocus": [
+  {
+   "id": "contractions",
+   "label": "Short forms",
+   "tip": "Say I’m, he’s, she’s, they’re as one smooth sound.",
+   "pattern": "[’'](m|s|re)$"
+  },
+  {
+   "id": "ing",
+   "label": "Clear -ing",
+   "tip": "Finish the verb: let the “-ing” ring at the end.",
+   "pattern": "ing[.,?!]*$"
+  }
+ ],
+ "scope": {
+  "structure": "present continuous (am / is / are + verb-ing)",
+  "structureId": "presentContinuous",
+  "forbiddenWords": [
+   "did",
+   "was",
+   "will",
+   "would",
+   "had",
+   "went",
+   "yesterday",
+   "tomorrow",
+   "do",
+   "does"
+  ],
+  "periodWords": [
+   "today",
+   "this week",
+   "this month"
+  ],
+  "changeVerbs": [
+   "getting",
+   "becoming",
+   "improving",
+   "changing",
+   "rising",
+   "growing"
+  ]
+ },
+ "coverage": {
+  "excluded": []
+ },
+ "scenes": [
+  {
+   "id": "S-A",
+   "title": "At home",
+   "sectionRef": "A",
+   "partnerId": "leo",
+   "situation": "Leo is looking for everyone in the flat.",
+   "teaser": "Next: Maya calls about your week 📞",
+   "turns": [
+    {
+     "id": "S1",
+     "type": "listenRepeat",
+     "sectionRef": "A",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "She’s making soup.",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "She’s making soup.",
+      "acceptedUtterances": [
+       "She is making soup."
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “She’s …”",
+      "Model answer: She’s making soup.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S2",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S2",
+     "type": "readAloud",
+     "sectionRef": "A",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Shh! Read this quietly.",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "The baby is sleeping.",
+      "acceptedUtterances": [
+       "The baby’s sleeping."
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “The …”",
+      "Model answer: The baby is sleeping.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S3",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S3",
+     "type": "readAloud",
+     "sectionRef": "B",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Where is Omar?",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "He’s washing the car.",
+      "acceptedUtterances": [
+       "He is washing the car."
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “He’s …”",
+      "Model answer: He’s washing the car.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S4",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S4",
+     "type": "askQuestion",
+     "sectionRef": "B",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Something smells wonderful in here.",
+      "audio": null
+     },
+     "prompt": {
+      "cueWords": "(what / you / cook?)"
+     },
+     "target": {
+      "canonical": "What are you cooking?",
+      "acceptedUtterances": [],
+      "pattern": {
+       "kind": "question",
+       "open": false
+      },
+      "requiredTokens": [
+       [
+        "cooking"
+       ]
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “What …”",
+      "Model answer: What are you cooking?",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!",
+      "recast": "What am I cooking? Rice and beans!"
+     },
+     "wrongExamples": [
+      {
+       "say": "What you are cooking",
+       "feedbackKey": "wordOrder"
+      },
+      {
+       "say": "What is you cooking",
+       "feedbackKey": "wrongBe"
+      }
+     ],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S5",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S5",
+     "type": "respond",
+     "sectionRef": "B",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "I’m cooking. What are you doing right now?",
+      "audio": null
+     },
+     "prompt": {
+      "responseIdeas": [
+       "I’m reading a comic.",
+       "I’m doing my homework."
+      ]
+     },
+     "target": {
+      "canonical": "I’m reading a comic.",
+      "acceptedUtterances": [
+       "I am reading a comic.",
+       "I’m doing my homework."
+      ],
+      "pattern": {
+       "kind": "statement",
+       "open": true
+      }
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “I’m …”",
+      "Model answer: I’m reading a comic.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!",
+      "recast": "That sounds relaxing."
+     },
+     "wrongExamples": [
+      {
+       "say": "I reading a comic",
+       "feedbackKey": "missingBe"
+      },
+      {
+       "say": "I am read a comic",
+       "feedbackKey": "noIng"
+      }
+     ],
+     "points": {
+      "base": 20,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "sceneEnd",
+      "fail": "retry"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S-C",
+   "title": "This week",
+   "sectionRef": "C",
+   "partnerId": "maya",
+   "situation": "Maya phones to ask about your week and the weather.",
+   "teaser": "You did it. The certificate is waiting 🏆",
+   "turns": [
+    {
+     "id": "S6",
+     "type": "listenRepeat",
+     "sectionRef": "C",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "We’re eating at home this week.",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "We’re eating at home this week.",
+      "acceptedUtterances": [
+       "We are eating at home this week."
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “We’re …”",
+      "Model answer: We’re eating at home this week.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S7",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S7",
+     "type": "readAloud",
+     "sectionRef": "C",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "How is your brother? Read this.",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "My brother isn’t working this month.",
+      "acceptedUtterances": [
+       "My brother is not working this month."
+      ]
+     },
+     "pronunciationFocus": [
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “My …”",
+      "Model answer: My brother isn’t working this month.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S8",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S8",
+     "type": "decide",
+     "sectionRef": "C",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Is the office open?",
+      "audio": null
+     },
+     "prompt": {
+      "context": "The office is closed this week.",
+      "clue": "closed this week",
+      "cueWords": "(they / work / this week)"
+     },
+     "target": {
+      "canonical": "They aren’t working this week.",
+      "acceptedUtterances": [
+       "They’re not working this week.",
+       "They are not working this week."
+      ],
+      "pattern": {
+       "kind": "negative",
+       "open": false
+      },
+      "requiredTokens": [
+       [
+        "working"
+       ]
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “They …”",
+      "Model answer: They aren’t working this week.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!",
+      "recast": "Right, they aren’t working this week."
+     },
+     "wrongExamples": [
+      {
+       "say": "They are working this week",
+       "feedbackKey": "polarity"
+      },
+      {
+       "say": "They don’t working this week",
+       "feedbackKey": "wrongNegative"
+      }
+     ],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S9",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S9",
+     "type": "readAloud",
+     "sectionRef": "D",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Look outside. It is dark already.",
+      "audio": null
+     },
+     "prompt": {},
+     "target": {
+      "canonical": "The days are getting shorter.",
+      "acceptedUtterances": []
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “The …”",
+      "Model answer: The days are getting shorter.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!"
+     },
+     "wrongExamples": [],
+     "points": {
+      "base": 12,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "S10",
+      "fail": "retry"
+     }
+    },
+    {
+     "id": "S10",
+     "type": "respond",
+     "sectionRef": "D",
+     "origin": "learnerscare",
+     "status": "draft",
+     "partner": {
+      "text": "Is the weather changing where you are?",
+      "audio": null
+     },
+     "prompt": {
+      "responseIdeas": [
+       "Yes, it’s getting colder.",
+       "Yes, the sky is getting darker."
+      ]
+     },
+     "target": {
+      "canonical": "Yes, it’s getting colder.",
+      "acceptedUtterances": [
+       "It is getting colder.",
+       "Yes, the sky is getting darker."
+      ],
+      "pattern": {
+       "kind": "statement",
+       "open": true
+      },
+      "requiredTokens": [
+       [
+        "getting",
+        "becoming",
+        "improving",
+        "changing",
+        "rising",
+        "growing"
+       ]
+      ]
+     },
+     "pronunciationFocus": [
+      "contractions",
+      "ing"
+     ],
+     "hints": [
+      "Listen again, slowly.",
+      "It starts with “Yes, …”",
+      "Model answer: Yes, it’s getting colder.",
+      "Listen, then say it together with your partner."
+     ],
+     "feedback": {
+      "onPass": "Great!",
+      "recast": "Then take a coat with you!"
+     },
+     "wrongExamples": [
+      {
+       "say": "Yes it getting colder",
+       "feedbackKey": "missingBe"
+      }
+     ],
+     "points": {
+      "base": 20,
+      "bonusClear": 5,
+      "bonusNoHint": 3
+     },
+     "next": {
+      "pass": "sceneEnd",
+      "fail": "retry"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+source
+docs/screens
+test-results
+RELEASE_BACKUP
+UPLOAD_READY
+*.zip
