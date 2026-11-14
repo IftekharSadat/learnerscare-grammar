@@ -1,8 +1,8 @@
 # Blockers and decisions
 
 ## Blocking a marketplace submission
-1. **Public live demo.** Nothing is deployed and no hosting access exists in the build environment.
-   Checklist: `DEPLOYMENT.md`. Use the sample-unit build for any public demo.
+1. ~~Public live demo~~ — **done**: https://learnerscare-grammar-dguh.vercel.app/ (sample unit, verified in a browser on 2026-11-14).
+   The source repository is public on GitHub; make it private before selling the code if buyers should not get it free.
 2. **Marketplace requirements unread.** The marketplace site could not be opened. Read the sell page and the Seller
    Agreement, then compare with `docs/VIBE96_AUDIT_REPORT.md`.
 3. **Content rights.** Unit 1 is textbook-derived and excluded from the package (`LICENSING.md`). Decide: obtain a

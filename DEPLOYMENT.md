@@ -1,7 +1,7 @@
 # Deployment
 
 The app is a static site (`dist/`). It needs **https** (service worker and microphone) and nothing else.
-No public deployment has been made yet — see "Live demo checklist" at the end.
+A public demo of the sample-unit build is live on Vercel: https://learnerscare-grammar-dguh.vercel.app/ (see "Live demo" at the end).
 
 ## Approach 1 — static hosting (recommended)
 Works on any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3 + CloudFront, any web server).
@@ -40,12 +40,11 @@ Deploy a new `dist/`. The service worker (`registerType: autoUpdate`) picks up t
 replaces the precache; unit content is cached separately in `unit-content` and refreshed when files change name or
 the learner clears storage. Learner progress lives in the browser (IndexedDB) and is not touched by a deploy.
 
-## Live demo checklist (not done — needs your hosting account)
-- [ ] Decide which content the public demo shows. **Use the rights-cleared sample unit** unless you hold written
-      permission for the textbook-derived Unit 1 (`LICENSING.md`).
-- [ ] Deploy `dist/` to an https host; confirm `https://…/` loads and `https://…/manifest.webmanifest` is served.
-- [ ] Open on a phone: install prompt appears, narration/voice starts after a tap, Type mode works in Talk.
-- [ ] If the demo should show Talk, approve the sample turns first (or accept a "Draft" label by building with
-      `VITE_TALK_INCLUDE_DRAFTS=true`).
-- [ ] No `.env` with secrets on the host; LLM proxy left off unless configured.
-- [ ] Record the URL here: `DEMO_URL = ______________________`
+## Live demo
+**https://learnerscare-grammar-dguh.vercel.app/** — Vercel, deployed from the `main` branch of the GitHub repository; every push redeploys automatically.
+Verified on 2026-11-14 in a real browser at phone width: map loads, service worker registers, an explanation node
+plays to the end, an exercise accepts a correct answer, no failed requests, no page errors, no horizontal overflow.
+It shows the original sample unit only (no textbook content). Talk does not appear yet because the sample dialogue
+is still awaiting the owner's approval. No environment variables or secrets are set on the host.
+
+Vercel settings used: framework preset Vite, build command `npm run build`, output directory `dist`, Node 22.

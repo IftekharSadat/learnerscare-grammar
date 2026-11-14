@@ -44,6 +44,6 @@ sample unit; roughly 30 MB per narrated unit.
 **Installation summary:** `npm ci` → `npm run build` → upload `dist/`. See `HowToSetup.md`.
 **Deployment:** static hosting (verified locally) or Docker + nginx (provided, unbuilt). See `DEPLOYMENT.md`.
 **Screenshots:** `MARKETPLACE_MEDIA/screenshot-01…07` (1920 × 1080, from the packaged build).
-**Demo URL:** `__________________________` (not deployed yet)
+**Demo URL:** https://learnerscare-grammar-dguh.vercel.app/ (sample unit; Talk hidden until the sample dialogue is approved)
 **Licence:** to be set by the seller after reading the Seller Agreement. Third-party: fonts under SIL OFL 1.1;
 libraries under MIT. See `LICENSING.md`.

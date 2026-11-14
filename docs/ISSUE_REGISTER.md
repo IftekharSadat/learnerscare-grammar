@@ -3,7 +3,7 @@
 | ID | Pri | Component | Description | Impact | Recommended fix | Status | Blocks submission |
 |---|---|---|---|---|---|---|---|
 | P0-1 | P0 | Unit 1 content (development repository) | Text, exercises, key answers, narration and screenshots derive from a third-party textbook | Unlawful if distributed | Publisher licence, or replace with original content | Mitigated: excluded from the package; automated content gate | Yes for any listing that includes Unit 1; no for the sample-unit package |
-| P1-1 | P1 | Live demo | No public deployment exists | Marketplace requires a demo | Deploy `dist/` of the sample build to an https host | Open — needs hosting access | **Yes** |
+| P1-1 | P1 | Live demo | Was missing | — | — | **Closed**: live on Vercel, verified in a browser | No |
 | P1-2 | P1 | Marketplace requirements | Official `/sell` page and Seller Agreement unread (site unreachable) | Unknown requirements may be unmet | Owner reads both; re-run the audit against them | Open | **Yes** |
 | P1-3 | P1 | Sample unit wording + its 10 Talk turns | New content not yet approved by the owner; Talk therefore absent from the default package build | Demo lacks Talk unless approved | Review `content/units/unit-900/conversation-review.md`, set status | Open — owner | Yes for a demo that shows Talk |
 | P1-4 | P1 | Talk Unit 1 drafts | 17 turns and the finale await approval | Unit 1 Talk is 4 scenes without finale | `docs/TALK_DRAFT_APPROVAL.md` | Open — owner | No (Unit 1 is not in the package) |
