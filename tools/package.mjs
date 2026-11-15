@@ -1,7 +1,7 @@
 // Assembles UPLOAD_READY/ (engine + rights-cleared sample unit, no textbook content) and runs the package gates.
 //   node tools/package.mjs            assemble + scans
 // Verification from a clean copy and the archive are separate steps (see docs/FINAL_INDEPENDENT_AUDIT.md).
-import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const OUT = 'UPLOAD_READY';
@@ -41,6 +41,41 @@ delete pkg.scripts.ingest; delete pkg.scripts['audit:sync']; delete pkg.scripts.
 pkg.version = '1.0.0-rc.1';
 writeFileSync(join(OUT, 'package.json'), JSON.stringify(pkg, null, 2) + '\n');
 
+
+/* ---------- layout: the marketplace archive keeps the web application in "React Web App/" and the guides at the top ---------- */
+const APP_DIR = 'React Web App';
+const ROOT_ITEMS = ['README.md', 'HowToSetup.md', 'CLAUDE.md', 'CHANGELOG.md', 'LICENSE-NOTE.md', 'LICENSING.md', 'PRIVACY.md', 'SECURITY.md',
+  'DEPLOYMENT.md', 'DESIGN.md', 'ARCHITECTURE.md', 'TECHNICAL_DETAILS.md', 'SUBMISSION_CHECKLIST.md', 'docker-compose.yml', 'docs', 'MARKETPLACE_MEDIA'];
+mkdirSync(join(OUT, APP_DIR));
+for (const n of readdirSync(OUT)) {
+  if (n === APP_DIR || ROOT_ITEMS.includes(n)) continue;
+  renameSync(join(OUT, n), join(OUT, APP_DIR, n));
+}
+const appNote = '> The web application is in the `React Web App/` folder. Run every command in this guide inside that folder (`cd "React Web App"`).\n\n';
+for (const f of ['README.md', 'HowToSetup.md']) writeFileSync(join(OUT, f), appNote + readFileSync(join(OUT, f), 'utf8'));
+writeFileSync(join(OUT, 'docker-compose.yml'), readFileSync(join(OUT, 'docker-compose.yml'), 'utf8').replace('build: .', 'build: ./React Web App'));
+mkdirSync(join(OUT, '.github', 'workflows'), { recursive: true });
+writeFileSync(join(OUT, '.github', 'workflows', 'ci.yml'), `name: CI
+on: [push, pull_request]
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: React Web App
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: React Web App/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+`);
+
 /* ---------- gates ---------- */
 const files = [];
 const walk = (d) => { for (const n of readdirSync(d)) { const p = join(d, n); statSync(p).isDirectory() ? walk(p) : files.push(p); } };
@@ -72,8 +107,11 @@ const leaks = text.filter((f) => !f.endsWith('package-lock.json') && secret.test
 console.log(`secrets scan: ${leaks.length} hit(s)`);
 if (leaks.length) fail(`possible secrets in: ${leaks.join(', ')}`);
 // 4. required files
-const required = ['README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'DESIGN.md', 'CHANGELOG.md',
-  'package.json', 'package-lock.json', 'index.html', 'vite.config.ts', 'tsconfig.json', '.env.example', 'content/index.json', 'src/main.tsx', 'server/proxy.mjs', 'Dockerfile', 'docker-compose.yml', 'LICENSE-NOTE.md'];
+const required = ['README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'LICENSE-NOTE.md', 'DESIGN.md', 'CHANGELOG.md',
+  'docker-compose.yml', '.github/workflows/ci.yml',
+  `${APP_DIR}/package.json`, `${APP_DIR}/package-lock.json`, `${APP_DIR}/index.html`, `${APP_DIR}/vite.config.ts`, `${APP_DIR}/tsconfig.json`,
+  `${APP_DIR}/.env.example`, `${APP_DIR}/content/index.json`, `${APP_DIR}/src/main.tsx`, `${APP_DIR}/src/App.tsx`, `${APP_DIR}/public/manifest.webmanifest`,
+  `${APP_DIR}/server/proxy.mjs`, `${APP_DIR}/Dockerfile`];
 const missing = required.filter((f) => !existsSync(join(OUT, f)));
 if (missing.length) fail(`missing required files: ${missing.join(', ')}`);
 const bytes = files.reduce((n, f) => n + statSync(f).size, 0);

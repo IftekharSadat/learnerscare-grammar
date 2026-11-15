@@ -55,24 +55,10 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icons/*.png', 'icons/*.svg'],
-      manifest: {
-        name: 'LearnersCare Grammar',
-        short_name: 'LearnersCare',
-        description: 'Interactive English grammar practice with narrated explanations.',
-        theme_color: '#14184A',
-        background_color: '#F6F4FF',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: './',
-        scope: './',
-        icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
-        ],
-      },
+      // the web app manifest is a real file in public/manifest.webmanifest (editable for branding)
+      manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,woff2,png,svg}'],
+        globPatterns: ['**/*.{js,css,html,woff2,png,svg,webmanifest}'],
         globIgnores: ['content/**'],
         navigateFallback: 'index.html',
         runtimeCaching: [
