@@ -1,0 +1,8 @@
+# Runs the static LearnersCare app behind nginx. No database and no secrets are needed.
+#   docker compose up -d --build   →   http://localhost:8080
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped

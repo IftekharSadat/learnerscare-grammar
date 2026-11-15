@@ -42,6 +42,12 @@ None are required. Copy `.env.example` to `.env` only if you want an optional fe
 Never put secrets in `VITE_*` variables: they are compiled into the public bundle. The only secret in this project
 is the optional proxy's API key, which lives in the proxy's own environment (`server/README.md`).
 
+## Docker (one command)
+```bash
+docker compose up -d --build
+```
+Open http://localhost:8080. Requires Docker with the Compose plugin. Nothing needs to be configured.
+
 ## Tests
 ```bash
 npm test

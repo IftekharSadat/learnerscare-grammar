@@ -18,8 +18,8 @@ mkdirSync(join(OUT, 'tests')); mkdirSync(join(OUT, 'e2e')); mkdirSync(join(OUT, 
 for (const t of ['engine.test.ts', 'proxy-limits.test.ts', 'sample-unit.test.tsx', 'scalability.test.tsx']) copy(`tests/${t}`);
 copy('e2e/smoke.spec.ts');
 for (const f of ['package.json', 'package-lock.json', 'index.html', 'vite.config.ts', 'tsconfig.json', 'tailwind.config.js', 'postcss.config.js',
-  '.env.example', '.eslintrc.cjs', '.prettierrc', '.dockerignore', 'Dockerfile',
-  'README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'DESIGN.md', 'CHANGELOG.md']) copy(f);
+  '.env.example', '.eslintrc.cjs', '.prettierrc', '.dockerignore', 'Dockerfile', 'playwright.config.ts',
+  'README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'LICENSE-NOTE.md', 'DESIGN.md', 'CHANGELOG.md', 'docker-compose.yml']) copy(f);
 for (const f of ['FINAL_INDEPENDENT_AUDIT.md', 'VIBE96_AUDIT_REPORT.md', 'FUTURE_UNIT_EXPANSION.md', 'BLOCKERS.md', 'SPEECH_TEST_MATRIX.md', 'ISSUE_REGISTER.md', 'MARKETPLACE_LISTING.md']) if (existsSync(`docs/${f}`)) copy(`docs/${f}`);
 if (existsSync('docs/marketplace-media')) copy('docs/marketplace-media', 'MARKETPLACE_MEDIA');
 writeFileSync(join(OUT, '.gitignore'), 'node_modules\ndist\ntest-results\nplaywright-report\n.env\n');
@@ -73,7 +73,7 @@ console.log(`secrets scan: ${leaks.length} hit(s)`);
 if (leaks.length) fail(`possible secrets in: ${leaks.join(', ')}`);
 // 4. required files
 const required = ['README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'DESIGN.md', 'CHANGELOG.md',
-  'package.json', 'package-lock.json', 'index.html', 'vite.config.ts', 'tsconfig.json', '.env.example', 'content/index.json', 'src/main.tsx', 'server/proxy.mjs', 'Dockerfile'];
+  'package.json', 'package-lock.json', 'index.html', 'vite.config.ts', 'tsconfig.json', '.env.example', 'content/index.json', 'src/main.tsx', 'server/proxy.mjs', 'Dockerfile', 'docker-compose.yml', 'LICENSE-NOTE.md'];
 const missing = required.filter((f) => !existsSync(join(OUT, f)));
 if (missing.length) fail(`missing required files: ${missing.join(', ')}`);
 const bytes = files.reduce((n, f) => n + statSync(f).size, 0);
