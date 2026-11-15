@@ -19,7 +19,7 @@ for (const t of ['engine.test.ts', 'proxy-limits.test.ts', 'sample-unit.test.tsx
 copy('e2e/smoke.spec.ts');
 for (const f of ['package.json', 'package-lock.json', 'index.html', 'vite.config.ts', 'tsconfig.json', 'tailwind.config.js', 'postcss.config.js',
   '.env.example', '.eslintrc.cjs', '.prettierrc', '.dockerignore', 'Dockerfile', 'playwright.config.ts',
-  'README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'LICENSE-NOTE.md', 'DESIGN.md', 'CHANGELOG.md', 'docker-compose.yml']) copy(f);
+  'README.md', 'CLAUDE.md', 'HowToSetup.md', 'ARCHITECTURE.md', 'DEPLOYMENT.md', 'SECURITY.md', 'PRIVACY.md', 'LICENSING.md', 'LICENSE-NOTE.md', 'DESIGN.md', 'CHANGELOG.md', 'docker-compose.yml', 'TECHNICAL_DETAILS.md', 'SUBMISSION_CHECKLIST.md']) copy(f);
 for (const f of ['FINAL_INDEPENDENT_AUDIT.md', 'VIBE96_AUDIT_REPORT.md', 'FUTURE_UNIT_EXPANSION.md', 'BLOCKERS.md', 'SPEECH_TEST_MATRIX.md', 'ISSUE_REGISTER.md', 'MARKETPLACE_LISTING.md']) if (existsSync(`docs/${f}`)) copy(`docs/${f}`);
 if (existsSync('docs/marketplace-media')) copy('docs/marketplace-media', 'MARKETPLACE_MEDIA');
 writeFileSync(join(OUT, '.gitignore'), 'node_modules\ndist\ntest-results\nplaywright-report\n.env\n');
