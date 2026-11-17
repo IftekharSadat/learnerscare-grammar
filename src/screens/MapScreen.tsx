@@ -40,8 +40,17 @@ export function MapScreen({ unit, manifest }: { unit: Unit; manifest: Manifest }
   return (
     <div className="mx-auto w-full max-w-stage px-4 pb-16">
       <header className="flex items-center gap-2 py-4">
-        <Pip size={36} />
-        <span className="hidden font-display text-xl min-[420px]:inline">LearnersCare</span>
+        {manifest.site ? (
+          <a href={manifest.site.url} className="flex items-center gap-2 rounded-xl hover:underline" data-testid="site-link" aria-label={`Back to ${manifest.site.label}`}>
+            <Pip size={36} />
+            <span className="hidden font-display text-xl min-[420px]:inline">{manifest.site.label}</span>
+          </a>
+        ) : (
+          <>
+            <Pip size={36} />
+            <span className="hidden font-display text-xl min-[420px]:inline">LearnersCare</span>
+          </>
+        )}
         <span className="ml-auto flex items-center gap-1.5">
           <span className="chip" aria-label={`${progress.streak.count} day streak`}><Icon name="flame" size={16} className="text-[color:var(--coral)]" />{progress.streak.count}</span>
           <span className="chip" aria-label={`${progress.xp} XP`} data-testid="xp"><Icon name="star" size={16} className="text-[color:#B77F00]" />{progress.xp}</span>

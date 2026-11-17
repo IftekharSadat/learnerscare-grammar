@@ -157,4 +157,6 @@ export const Manifest = z.object({
     id: z.string(), number: z.number(), title: z.string(), subtitle: z.string(), path: z.string(),
     questions: z.number(), nodes: z.number(),
   })),
+  /** optional link back to the operator's own website, shown in the app header */
+  site: z.object({ label: z.string().min(1).max(40), url: z.string().url() }).optional(),
 });

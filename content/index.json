@@ -9,5 +9,9 @@
    "questions": 16,
    "nodes": 11
   }
- ]
+ ],
+ "site": {
+  "label": "LearnersCare",
+  "url": "https://learnerscare.com/"
+ }
 }

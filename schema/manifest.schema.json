@@ -40,6 +40,25 @@
     ],
     "additionalProperties": false
    }
+  },
+  "site": {
+   "type": "object",
+   "properties": {
+    "label": {
+     "type": "string",
+     "minLength": 1,
+     "maxLength": 40
+    },
+    "url": {
+     "type": "string",
+     "format": "uri"
+    }
+   },
+   "required": [
+    "label",
+    "url"
+   ],
+   "additionalProperties": false
   }
  },
  "required": [
